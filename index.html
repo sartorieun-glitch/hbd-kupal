@@ -6,10 +6,10 @@
 
   <title>Happy Birthday ♡</title>
 
-  <!-- Clean minimalist fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
   <style>
 
@@ -25,8 +25,8 @@
       font-family: "DM Sans", sans-serif;
 
       background:
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.18), transparent 25%),
-        radial-gradient(circle at 80% 70%, rgba(255,255,255,0.12), transparent 30%),
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.15), transparent 25%),
+        radial-gradient(circle at 80% 70%, rgba(255,255,255,0.10), transparent 30%),
         linear-gradient(135deg, #6f4b8b, #9b73b5, #60427d);
     }
 
@@ -34,15 +34,15 @@
       height: 100vh;
       width: 100%;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       text-align: center;
       padding: 25px;
       position: relative;
     }
 
 
-    /* Sparkles */
+    /* sparkles */
 
     .sparkle {
       position: absolute;
@@ -80,21 +80,20 @@
     }
 
 
-    /* Main content */
+    /* content */
 
     .content {
-      max-width: 750px;
+      max-width: 700px;
       z-index: 2;
     }
 
 
-    /* Top text */
+    /* hearts */
 
     .tag {
       color: rgba(255,255,255,0.75);
-      font-size: 12px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 8px;
       margin-bottom: 30px;
 
       opacity: 0;
@@ -102,14 +101,14 @@
     }
 
 
-    /* Hi baby */
+    /* hi baby */
 
     .greeting {
       color: white;
-      font-size: clamp(25px, 4vw, 38px);
+      font-size: clamp(24px, 4vw, 36px);
       font-weight: 400;
       letter-spacing: 1px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
 
       opacity: 0;
       animation: fadeUp 1s ease forwards;
@@ -117,22 +116,21 @@
     }
 
 
-    /* Happy Birthday */
+    /* main title */
 
     h1 {
       font-family: "Playfair Display", serif;
       color: white;
 
-      font-size: clamp(55px, 10vw, 110px);
-      line-height: 0.95;
+      font-size: clamp(55px, 10vw, 105px);
+      line-height: 1;
 
       text-shadow:
         0 0 10px rgba(255,255,255,0.3),
         0 0 30px rgba(255,255,255,0.15);
 
-      cursor: default;
-
       opacity: 0;
+
       animation: birthdayReveal 1.3s ease forwards;
       animation-delay: 0.8s;
 
@@ -140,25 +138,24 @@
     }
 
 
-    /* Interactive birthday hover */
-
     h1:hover {
       transform: scale(1.03);
+
       text-shadow:
         0 0 15px rgba(255,255,255,0.6),
         0 0 40px rgba(255,255,255,0.3);
     }
 
 
-    /* Message */
+    /* message */
 
     .message {
-      color: rgba(255,255,255,0.8);
+      color: rgba(255,255,255,0.85);
       font-size: clamp(14px, 2vw, 17px);
-      line-height: 1.7;
+      line-height: 1.8;
 
       max-width: 500px;
-      margin: 28px auto 35px;
+      margin: 30px auto 35px;
 
       opacity: 0;
       animation: fadeUp 1s ease forwards;
@@ -166,23 +163,21 @@
     }
 
 
-    /* Button */
+    /* button */
 
     .click-btn {
-
       background: rgba(255,255,255,0.12);
 
       border: 1px solid rgba(255,255,255,0.5);
 
       color: white;
 
-      padding: 15px 38px;
-
+      padding: 15px 40px;
       border-radius: 50px;
 
       font-family: "DM Sans", sans-serif;
       font-size: 13px;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
 
       cursor: pointer;
 
@@ -197,7 +192,6 @@
 
 
     .click-btn:hover {
-
       background: white;
       color: #72518c;
 
@@ -208,7 +202,7 @@
     }
 
 
-    /* Animations */
+    /* animations */
 
     @keyframes fadeDown {
 
@@ -245,13 +239,11 @@
       0% {
         opacity: 0;
         transform: scale(0.8);
-        letter-spacing: -5px;
       }
 
       100% {
         opacity: 1;
         transform: scale(1);
-        letter-spacing: 0;
       }
 
     }
@@ -282,7 +274,7 @@
   <section class="slide">
 
 
-    <!-- Sparkles -->
+    <!-- sparkles -->
 
     <div class="sparkle s1">✦</div>
     <div class="sparkle s2">✧</div>
@@ -293,58 +285,52 @@
     <div class="content">
 
 
-      <!-- Top text -->
+      <!-- hearts -->
 
-      <p class="tag">
-        ♡♡♡
-      </p>
+      <p class="tag">♡ ♡ ♡</p>
 
 
-      <!-- Greeting -->
+      <!-- greeting -->
 
-      <p class="greeting">
-        hi baby! 
-      </p>
+      <p class="greeting">hi baby!</p>
 
 
-      <!-- Main title -->
+      <!-- title -->
 
-      <h1>
-        HAPPY BIRTHDAY!
-      </h1>
+      <h1>HAPPY BIRTHDAY!</h1>
 
 
-      <!-- Message -->
+      <!-- message -->
 
       <p class="message">
 
-        i honestly didn't know what to give you, so i made this instead.
-i know it's just a small thing, but i hope you'll still appreciate it :>
-        <br>
+        i honestly didn't know what to give you,
+        so i made this instead.
+        <br><br>
+        i know it's just a small thing,
+        but i hope you'll still appreciate it :>
 
       </p>
 
 
-      <!-- Button -->
+      <!-- button -->
 
       <button class="click-btn" onclick="nextSlide()">
-
         CLICK →
-
       </button>
 
 
     </div>
 
-  </section>
 
+  </section>
 
 
   <script>
 
     function nextSlide() {
 
-      alert("next surprise coming soon ♡");
+      alert("the next surprise is waiting ♡");
 
     }
 
